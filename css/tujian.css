@@ -1,0 +1,223 @@
+img.bg {
+    width: 700px;
+    height: 700px;
+    margin-left: 350px;
+    margin-top: 175px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.tjzwm {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.5;
+}
+
+.tjldm {
+    font-size: large;
+    font-style: italic;
+    line-height: 0.2;
+}
+
+.tjfl {
+    font-size: large;
+}
+
+.nav {
+    width: 900px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav ul li {
+
+    top: 100px;
+    position: relative;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(219, 253, 242);
+    margin-right: 100px;
+    z-index: 777;
+    list-style-type: none;
+    left: 720px;
+    margin-top: 100px;
+}
+
+
+.nav ul li a::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    left: 15px;
+    border: rgb(255, 255, 255) solid 2px;
+    border-radius: 25%;
+    z-index: 888;
+}
+
+.nav ul li:nth-of-type(1) a::after {
+    background: url(./img/tangLangYuanDun/kxlbt\ \(1\).jpg) no-repeat center;
+    background-size: 100px;
+}
+
+.nav ul li:nth-of-type(2) a::after {
+    background: url(./img/tangLangYuanDun/kxlbt\ \(2\).jpg) no-repeat center;
+    background-size: 100px;
+}
+
+.nav ul li:nth-of-type(3) a::after {
+    background: url(./img/tangLangYuanDun/kxlbt\ \(3\).jpg) no-repeat center;
+    background-size: 100px;
+}
+
+.nav ul li:nth-of-type(4) a::after {
+    background: url(./img/tangLangYuanDun/kxlbt\ \(4\).jpg) no-repeat center;
+    background-size: 100px;
+}
+
+.nav ul li:nth-of-type(5) a::after {
+    background: url(./img/tangLangYuanDun/kxlbt\ \(5\).jpg) no-repeat center;
+    background-size: 100px;
+}
+
+.nav ul li:nth-of-type(6) a::after {
+    background: url(./img/tangLangYuanDun/kxlbt\ \(6\).jpg) no-repeat center;
+    background-size: 100px;
+}
+
+.nav ul li:nth-of-type(7) a::after {
+    background: url(./img/tangLangYuanDun/kxlbt\ \(7\).jpg) no-repeat center;
+    background-size: 100px;
+}
+
+.nav ul li:nth-of-type(8) a::after {
+    background: url(./img/tangLangYuanDun/kxlbt\ \(8\).jpg) no-repeat center;
+    background-size: 100px;
+}
+
+.nav ul li:nth-of-type(9) a::after {
+    background: url(./img/tangLangYuanDun/kxlbt\ \(9\).jpg) no-repeat center;
+    background-size: 100px;
+}
+
+.nav ul li a::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 80px;
+    left: 15px;
+    border: #FFF solid 2px;
+    border-radius: 25%;
+    z-index: 99999;
+}
+
+.nav ul li a:hover::before {
+    background: rgba(0, 0, 0, 0);
+}
+
+.bga1:target {
+    z-index: 100;
+}
+
+.bga2:target {
+    z-index: 100;
+}
+
+.bga3:target {
+    z-index: 100;
+}
+
+.bga4:target {
+    z-index: 100;
+}
+
+.bga5:target {
+    z-index: 100;
+}
+
+.bga6:target {
+    z-index: 100;
+}
+
+.bga7:target {
+    z-index: 100;
+}
+
+.bga8:target {
+    z-index: 100;
+}
+
+.bga9:target {
+    z-index: 100;
+}
+
+.jianjie {
+    margin-top: 40px;
+    margin-left: 800px;
+
+}
+
+body {
+    background-color: #033344;
+
+}
+
+.cbl2 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.cbl2 li {
+    margin-bottom: 10px;
+    background-color: #1a94b5;
+    color: aliceblue;
+    font-size: 30px;
+    line-height: 3;
+    text-align: center;
+}
+
+.cbl2 {
+
+    width: 300px;
+    height: auto;
+    position: fixed;
+}
+
+.cbl2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cbl2 li:hover {
+    color: #033344;
+    background-color: aqua;
+}
+
+.main {
+    margin-top: 50px;
+    background-color: rgb(219, 253, 242);
+    margin-left: 320px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    padding-bottom: 100px;
+    height: 750px;
+}
+
+.head {
+    background-color: #1a94b5;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 2;
+}

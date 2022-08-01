@@ -1,0 +1,95 @@
+body {
+    background-color: #033344;
+    display: f
+}
+
+.cbl2 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.cbl2 li {
+    margin-bottom: 10px;
+    background-color: #1a94b5;
+    color: aliceblue;
+    font-size: 30px;
+    line-height: 3;
+    text-align: center;
+}
+
+.cbl2 {
+
+    width: 300px;
+    height: auto;
+    position: fixed;
+}
+
+.cbl2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cbl2 li:hover {
+    color: #033344;
+    background-color: aqua;
+}
+
+.main {
+    margin-top: 50px;
+    background-color: rgb(219, 253, 242);
+    margin-left: 320px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    padding-bottom: 100px;
+}
+
+.head {
+    background-color: #1a94b5;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 2;
+}
+
+.fenlei {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 0.5;
+}
+
+.wenzi {
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: large;
+}
+
+.zhongwen {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.xxnr {
+    font-weight: 4;
+}
+
+.lading {
+    margin-top: 0;
+    font-style: oblique;
+    line-height: 0.5;
+}
+
+.nhdg {
+    line-height: 0.5;
+    margin-top: 0;
+}
+
+.imgset {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    background-size: 600px;
+    margin-left: 400px;
+    margin-top: 30px;
+}
