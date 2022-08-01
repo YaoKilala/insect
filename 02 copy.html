@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/three.js"></script>
+  <script src="./js/GLTFLoader.js"></script>
+  <script src="./js/OrbitControls.js"></script>
+  <script src="./js/RGBELoader.js"></script>
+  <link rel="stylesheet" href="./css/02.css">
+</head>
+
+<body>
+
+  <script>
+    //创建场景
+    let scene = new THREE.Scene();
+
+
+    let axes = new THREE.AxesHelper(70);
+    scene.add(axes);
+
+    let geom = new THREE.SphereGeometry(1000, 1000, 1000);
+    let loader1 = new THREE.TextureLoader();
+    let texture = loader1.load('./css/img/cave.jpg');
+    let material = new THREE.MeshBasicMaterial({
+      map: texture,
+      side: THREE.BackSide
+    });
+    let panorama = new THREE.Mesh(geom, material);
+    scene.add(panorama);
+
+
+    const loader = new THREE.GLTFLoader();
+    // 加载地图模型
+    loader.load('./glb/003.glb', function (gltf) {
+      //将模型添加至场景
+      scene.add(gltf.scene)
+      //设置模型位置
+      gltf.scene.position.set(0, 0, 0)
+      gltf.scene.scale.set(30, 30, 30)
+    });
+    //创建光源
+    //点光源
+    let point = new THREE.PointLight(0xffffff, 1);
+    point.position.set(400, 200, 300);
+    scene.add(point);
+    let point2 = new THREE.PointLight(0xffffff, 0.5);
+    point2.position.set(-400, 100, -300);
+    scene.add(point2);
+    let ambient = new THREE.AmbientLight(0xffffff, 1)
+    scene.add(ambient);
+
+    //创建相机
+    let width = 1200; /*window.innerWidth;*/
+    let height = 800; /*window.innerHeight;*/
+    let camera = new THREE.PerspectiveCamera(45, width / height, 1, 2000);
+    camera.position.set(200, 200, 200);
+    camera.lookAt(0, 0, 0);
+
+    let render = new THREE.WebGLRenderer(); hudieyong
+    render.setSize(width, height);
+    render.setClearColor(0xb9d3ff, 1);
+
+
+    document.body.appendChild(render.domElement);
+    function animate() {
+      panorama.rotation.x += 0.01;
+      render.render(scene, camera);
+    }
+
+    let controls = new THREE.OrbitControls(camera, render.domElement);
+    controls.addEventListener('change', function () {
+      render.render(scene, camera);
+    });
+
+  </script>
+
+  <div>
+    <img src="./css/img/cave.jpg">
+    <img src="./css/img/cave2.jpg">
+    <img src="./css/img/cave3.JPG">
+
+  </div>
+  <div style="font-size:50px; margin-top:50px; border:5px solid #727171; border-radius:10px;
+  padding:15px; background-color: #b3c0c0;
+  ">
+    细角尤犀金龟
+  </div>
+  <div style="font-size:30px; margin-left:200px; margin-right:200px;">
+    <div style="display:flex; justify-content:space-between;">
+      <p><i>Eupatorus hardwickii</i></p>
+      <p>鞘翅目-犀金龟科</p>
+    </div>
+    <div>
+      <p><b>形态特征: </b>体长40-80mm。体黑色, 鞘翅整体黑色、橙褐色或边缘具浅黄色边。
+        角相比细角尤犀金龟较为粗短。具有两个亚种：原名亚种
+        <i>Eupatorus hardwickei hardwickei</i>, 金边亚种 <i>Eupatorus
+          hardwickei cantori</i>。
+      </p>
+      <p><b>分布：</b>西藏、云南；尼泊尔、印度、不丹、缅甸、越南、锡金。</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

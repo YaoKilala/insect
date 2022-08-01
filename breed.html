@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll-固定侧边栏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider {
+            position: absolute;
+            left: 50%;
+            top: 300px;
+            margin-left: 600px;
+            width: 45px;
+            height: 130px;
+            background-color: pink;
+        }
+
+        .w {
+            width: 1200px;
+            margin: 10px auto;
+        }
+
+        .header {
+            height: 150px;
+            background-color: purple;
+        }
+
+        .banner {
+            height: 250px;
+            background-color: skyblue;
+        }
+
+        .main {
+            height: 1000px;
+            background-color: yellowgreen;
+        }
+
+        span {
+            display: none;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <span class="goTop">返回顶部</span>
+    </div>
+    <div class="header w">header</div>
+    <div class="banner w">banner</div>
+    <div class="main w">main</div>
+    <script>
+        // 获取元素
+        var slider = document.querySelector('.slider')
+        var goTop = document.querySelector('.goTop')
+        var banner = document.querySelector('.banner')
+        var main = document.querySelector('.main')
+        // 被卷去头部的大小
+        var bannerTop = banner.offsetTop
+        // 侧边栏固定定位后该有的值
+        var sliderTop = slider.offsetTop - bannerTop
+        // main页面的top值
+        var mainTop = main.offsetTop
+        // 页面滚动事件
+        document.addEventListener('scroll', function () {
+            if (window.pageYOffset >= bannerTop) {
+                slider.style.position = 'fixed'
+                slider.style.top = sliderTop + 'px'
+            } else {
+                slider.style.position = 'absolute'
+                slider.style.top = '300px'
+            }
+            // 页面滚动到main盒子，就显示goTop模块
+            if (window.pageYOffset >= mainTop) {
+                goTop.style.display = 'block'
+            } else {
+                goTop.style.display = 'none'
+            }
+        })
+    </script>
+</body>
+
+</html>
