@@ -63,51 +63,6 @@ ul {
     z-index: 888;
 }
 
-.nav ul li:nth-of-type(1) a::after {
-    background: url(./img/tangLangYuanDun/kxlbt\ \(1\).jpg) no-repeat center;
-    background-size: 100px;
-}
-
-.nav ul li:nth-of-type(2) a::after {
-    background: url(./img/tangLangYuanDun/kxlbt\ \(2\).jpg) no-repeat center;
-    background-size: 100px;
-}
-
-.nav ul li:nth-of-type(3) a::after {
-    background: url(./img/tangLangYuanDun/kxlbt\ \(3\).jpg) no-repeat center;
-    background-size: 100px;
-}
-
-.nav ul li:nth-of-type(4) a::after {
-    background: url(./img/tangLangYuanDun/kxlbt\ \(4\).jpg) no-repeat center;
-    background-size: 100px;
-}
-
-.nav ul li:nth-of-type(5) a::after {
-    background: url(./img/tangLangYuanDun/kxlbt\ \(5\).jpg) no-repeat center;
-    background-size: 100px;
-}
-
-.nav ul li:nth-of-type(6) a::after {
-    background: url(./img/tangLangYuanDun/kxlbt\ \(6\).jpg) no-repeat center;
-    background-size: 100px;
-}
-
-.nav ul li:nth-of-type(7) a::after {
-    background: url(./img/tangLangYuanDun/kxlbt\ \(7\).jpg) no-repeat center;
-    background-size: 100px;
-}
-
-.nav ul li:nth-of-type(8) a::after {
-    background: url(./img/tangLangYuanDun/kxlbt\ \(8\).jpg) no-repeat center;
-    background-size: 100px;
-}
-
-.nav ul li:nth-of-type(9) a::after {
-    background: url(./img/tangLangYuanDun/kxlbt\ \(9\).jpg) no-repeat center;
-    background-size: 100px;
-}
-
 .nav ul li a::before {
     content: "";
     width: 100px;
@@ -161,6 +116,51 @@ ul {
 .bga9:target {
     z-index: 100;
 }
+
+.bga10:target {
+    z-index: 100;
+}
+
+.bga11:target {
+    z-index: 100;
+}
+
+.bga12:target {
+    z-index: 100;
+}
+
+.bga13:target {
+    z-index: 100;
+}
+
+.bga14:target {
+    z-index: 100;
+}
+
+.bga15:target {
+    z-index: 100;
+}
+
+.bga16:target {
+    z-index: 100;
+}
+
+.bga17:target {
+    z-index: 100;
+}
+
+.bga18:target {
+    z-index: 100;
+}
+
+.bga19:target {
+    z-index: 100;
+}
+
+.bga20:target {
+    z-index: 100;
+}
+
 
 .jianjie {
     margin-top: 40px;
