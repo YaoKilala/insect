@@ -7,7 +7,6 @@
     body {
         background: linear-gradient(135deg, #22242f, #033344);
         display: flex;
-
     }
 
     .cbl a {
@@ -58,7 +57,8 @@
 
 
     .mu {
-        margin-top: 30px;
+        position: relative;
+        top: 30px;
     }
 
     .zk {
@@ -86,6 +86,12 @@
         width: 1700px;
         margin-top: 16px;
         margin-left: 310px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head {
+        overflow-y: auto;
     }
 
     .clb2 ul {
@@ -278,6 +284,9 @@
     }
 
     .kuaisutiaozhuan {
+        position: absolute;
+        top: 580px;
+
         display: flex;
         flex-wrap: wrap;
     }
@@ -286,7 +295,7 @@
         background-color: #1a94b5;
         font-size: 20px;
         color: aliceblue;
-        margin: 5px 5px;
+        margin: 5px 3px;
         border: 3px solid rgb(180, 179, 179);
         border-radius: 15%;
         padding: 5px;
@@ -296,7 +305,7 @@
         position: relative;
     }
 
-    .kuaisutiaozhuan p {
+    .cbl p {
         background-image: linear-gradient(to right,
                 rgba(255, 0, 0, 0), #1a94b5,
                 rgba(255, 0, 0, 0));
@@ -304,8 +313,9 @@
         padding: 5px 10px;
         font-size: 30px;
         right: 30px;
-        left: 30px;
-        position: relative
+        left: 0px;
+        position: relative;
+        text-align: center;
     }
 
     a {
@@ -313,4 +323,25 @@
         color: aliceblue
     }
 
+    .fanhuidingbu {
+        position: relative;
+        height: 50px;
+        width: 150px;
+        left: 55px;
+        top: 20px;
+        border-radius: 10%;
+    }
 
+    .fanhui {
+        position: relative;
+        align-items: center;
+        font-size: 25px;
+        left: 60px;
+        line-height: 3;
+    }
+
+    .cbl ul p a {
+        background-color: #15708a;
+        padding: 15px;
+        border-radius: 15%;
+    }
